@@ -21,7 +21,7 @@ class Program
 
         //EmailSettings emailSettings = new EmailSettings
         //{
-        //    ServerName = "smtp.example.com",
+        //    ServerName = "smtp.gmail.com",
         //    PortNumber = 587,
         //    EmailAddress = "my-email@example.com",
         //    Password = "EFF5Cxxz",
@@ -30,7 +30,7 @@ class Program
         //};
 
         //smtpSender.SaveConfiguration(configFilePath,emailSettings);
-        
+
         //smtpSender.GetConfiguration(configFilePath);
 
         //MessageData messageData = new MessageData
@@ -43,6 +43,6 @@ class Program
         //smtpSender.SendEmail(messageData);
 
         #endregion
-        
+
     }
 }
