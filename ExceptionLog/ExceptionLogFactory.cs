@@ -32,9 +32,10 @@ namespace ExceptionLog
             }
         }
 
-        public void LogException(Exception exception)
+        public string LogException(Exception exception)
         {
-            _logger.LogException(exception);
+            
+            return _logger.LogException(exception);
         }
     }
 }

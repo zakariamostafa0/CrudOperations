@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ExceptionLog
 {
-    internal class EmailExceptionLog : IExceptionLog
+    public class EmailExceptionLog : IExceptionLog
     {
         private readonly string _emailAddress;
         public EmailExceptionLog(string emailAddress) 
@@ -18,7 +18,7 @@ namespace ExceptionLog
         {
             try
             {
-                var mailMessage = new MailMessage("app@test.com", _emailAddress)
+                var mailMessage = new MailMessage("zeko10191@gmail.com", _emailAddress)
                 {
                     Subject = "Exception Occurred",
                     Body = $"Date is: [{DateTime.Now}]  Exception Type {exception.GetType().Name}\n" +
@@ -29,7 +29,7 @@ namespace ExceptionLog
                 var smtpClient = new SmtpClient("smtp.gmail.com")
                 {
                     Port = 587,
-                    Credentials = new System.Net.NetworkCredential("app@test.com", "Mypass"),
+                    Credentials = new System.Net.NetworkCredential("zeko10191@gmail.com", "boqrehsndjgtlzgf"),
                     EnableSsl = true
                 };
                 smtpClient.Send(mailMessage);
